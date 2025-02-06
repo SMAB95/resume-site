@@ -1,0 +1,119 @@
+/* 1. Reset and body styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #ececec;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    line-height: 1.5;
+    margin: 0; 
+    padding: 1rem 0;
+  }
+  
+  /* 2. A4 Container */
+  .resume-page {
+    /* Approx. A4 width */
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto; /* Centers the page */
+    background: #fff;
+    padding: 20mm;  /* Page margin */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    position: relative;
+  }
+  
+  /* 3. Headings, sections, etc. */
+  header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #ddd;
+    font-size: 1.3rem;
+    padding-bottom: 0.3rem;
+  }
+  
+  ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  li {
+    margin: 0.5rem 0;
+  }
+  
+  article h3 {
+    margin: 1rem 0 0.25rem;
+    font-size: 1.1rem;
+  }
+  
+  article p {
+    margin-bottom: 0.75rem;
+  }
+  
+  hr {
+    margin: 1rem 0;
+  }
+  
+  /* 4. Footer */
+  footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: #999;
+    font-size: 0.9rem;
+  }
+  
+  /* 5. Download button style */
+  .download-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    color: #fff;
+    background: #007acc;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  .download-button:hover {
+    background: #005a99;
+    text-decoration: none;
+  }
+  
+  /* 6. Print media query */
+  @media print {
+    body {
+      background: none;
+      margin: 0; 
+    }
+    .resume-page {
+      box-shadow: none;
+      border: none;
+      width: auto;
+      min-height: auto;
+      margin: 0;
+      padding: 1in;
+    }
+    @page {
+      size: A4;
+      margin: 1in;
+    }
+  }
+  
+  
